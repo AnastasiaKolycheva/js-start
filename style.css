@@ -47,13 +47,14 @@ body{
     -moz-transform: rotate(180deg);
     -webkit-transform: rotate(180deg);
     -o-transform: rotate(180deg);
+    transform: rotate(180deg);
     color:white;
     box-sizing: border-box;
     float:left;
     border-bottom-right-radius: 1em;
     border-top-right-radius: 1em;
   }
-.red_num {
+.red_num, .black_num, .two_to_one {
     height: 16.67%;
     width: 6.43%;
     border: 2px solid white ;
@@ -61,38 +62,18 @@ body{
     -moz-transform: rotate(180deg);
     -webkit-transform: rotate(180deg);
     -o-transform: rotate(180deg);
+    transform: rotate(180deg);
     color:white;
     box-sizing: border-box;
-    background-color: red;
     float: left;
-
+}
+.red_num {
+     background-color: red;
 }
 .black_num{
-    height: 16.67%;
-    width: 6.43%;
-    border: 2px solid white ;
-    writing-mode:tb-rl;
-    -moz-transform: rotate(180deg);
-    -webkit-transform: rotate(180deg);
-    -o-transform: rotate(180deg);
-    color:white;
-    box-sizing: border-box;
-    background-color: black;
-    float: left;
-}
-.two_to_one {
-    height: 16.67%;
-    width: 6.43%;
-    border: 2px solid white ;
-    writing-mode:tb-rl;
-    -moz-transform: rotate(180deg);
-    -webkit-transform: rotate(180deg);
-    -o-transform: rotate(180deg);
-    color:white;
-    box-sizing: border-box;
-    float: left;
-}
-.dozen {
+     background-color: black;
+    }
+.dozen, .first_dozen {
     width: 25.72%;
     border: 2px solid white ;
     height: 15%;
@@ -103,12 +84,6 @@ body{
 }
 .first_dozen {
     margin-left:11.43%;
-    width: 25.72%;
-    border: 2px solid white ;
-    height: 15%;
-    color:white;
-    box-sizing: border-box;
-    float: left;
 }
 .bottom_line {
     margin-left:11.43%;
@@ -118,67 +93,29 @@ body{
     box-sizing: border-box;
     float: left;
 }
-.bottom_line .one_eighteen {
+.bottom_line .one_eighteen, .bottom_line .even, .bottom_line .red, .bottom_line .black, .bottom_line .odd, .bottom_line .nineteen_thirty_six  {
     border: 2px solid white;
     width: 16.66%;
     height: 100%;
     float: left;
     box-sizing: border-box;
 }
-.bottom_line .even {
-    border: 2px solid white;
-    width: 16.66%;
-    height: 100%;
-    float: left;
-    box-sizing: border-box;
-}
-.bottom_line .red {
-    border: 2px solid white;
-    width: 16.66%;
-    height: 100%;
-    float: left;
-    box-sizing: border-box;
+.bottom_line .red .red_r, .bottom_line .black .black_r  {
+   margin:7% 0 0 34%;
+   width: 32%;
+   height: 70%;
+   box-sizing: border-box;
+   border: 2px solid white;
+   transform: rotate(-45deg);
 }
 .bottom_line .red .red_r {
-   margin:7% 0 0 34%;
-   width: 32%;
-   height: 70%;
-   box-sizing: border-box;
-   border: 2px solid white;
-   background-color: red;
-   transform: rotate(-45deg);
-
-}
-.bottom_line .black {
-    border: 2px solid white;
-    width: 16.66%;
-    height: 100%;
-    float: left;
-    box-sizing: border-box;
+  background-color: red;
 }
 .bottom_line .black .black_r{
-   margin:7% 0 0 34%;
-   width: 32%;
-   height: 70%;
-   box-sizing: border-box;
-   border: 2px solid white;
    background-color: black;
-   transform: rotate(-45deg);
-}
-.bottom_line .odd {
-    border: 2px solid white;
-    width: 16.66%;
-    height: 100%;
-    float: left;
-    box-sizing: border-box;
-}
-.bottom_line .nineteen_thirty_six{
-    border: 2px solid white;
-    width: 16.66%;
-    height: 100%;
-    float: left;
-    box-sizing: border-box;
-}
+   }
+
+
 
 
 
