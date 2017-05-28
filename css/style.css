@@ -1,0 +1,254 @@
+body{
+  margin:0 auto;
+  padding:0;
+  width:100%;
+}
+@media screen and (min-device-width: 1024px) {
+    #roulette {
+    height: 400px;
+    width: 60%;
+    max-width: 1000px;
+    margin-top: 2%;
+    margin-left: 20%;
+    padding-left: 0;
+    padding-top: 10%;
+    float: left;
+    background-color: darkgreen;
+    position: relative;
+    text-align: center;
+    font-family: 'Khula', sans-serif;
+    font-size: 250%;
+    }
+}
+@media screen and (max-device-width: 1023px) {
+    #roulette {
+    height: 300px;
+    width: 60%;
+    max-width: 600px;
+    margin-top: 2%;
+    margin-left: 20%;
+    padding-right: 2%;
+    padding-left: 2%;
+    padding-top: 10%;
+    float: left;
+    background-color: darkgreen;
+    position: relative;
+    text-align: center;
+    font-family: 'Khula', sans-serif;
+    }
+}
+#top_block {
+    top: 0%;
+    bottom: -1%;
+    width: 100%;
+    height: 25%;
+    box-sizing: border-box;
+    float: left;
+    position: absolute;
+}
+
+#top_block .ropic{
+    margin-top: 1%;
+    margin-left: 5%;
+    padding: 0;
+    box-sizing: border-box;
+    height: 95%;
+    width: 14%;
+    float:left;
+    background: url(../img/ruleta.png) 100% no-repeat;
+    background-size: cover; 
+}
+#top_block .story, .switch{
+    margin-top: 1%;
+    height: 35.67%;
+    width: 6.43%;
+    border: 1px solid white ;
+    color:white;
+    box-sizing: border-box;
+    float: left;
+    opacity: 0.3;
+}
+#top_block .switch{
+    margin-left: 3%;
+    width: 4%;
+    opacity: 1;
+}
+#top_block .switch .triangle {
+    margin-left: 8%;
+    border: 0.6em solid transparent; 
+    border-left: 0.8em solid yellow;
+}
+#top_block .text {
+    color:white;
+    font-size: 50%;
+    text-align: center;
+   }
+#top_block .chips{
+    margin-top: 0;
+    margin-top: 1%;
+    margin-right: 1%;
+    margin-bottom: 0; 
+    height: 35.67%;
+    }
+#top_block .chips >div{
+   float: left;
+   width: 5.2%; 
+   height: 99%;
+   opacity: 0.5;
+}
+#top_block .chips >div:first-child{
+  margin-left:40%;
+  background-image: url(../img/chips.png);
+  background-position: -1px -1px;
+}
+#top_block .chips >div:nth-child(2){
+  background-image: url(../img/chips.png);
+  background-position: -50px -1px;
+}
+#top_block .chips >div:nth-child(3){
+  background-image: url(../img/chips.png);
+  background-position: -100px -1px;
+}
+#top_block .chips >div:nth-child(4){
+  background-image: url(../img/chips.png);
+  background-position: -150px -1px;
+}
+#top_block .chips >div:nth-child(5){
+  background-image: url(../img/chips.png);
+  background-position: -200px -1px;
+}
+#top_block .chips >div:nth-child(6){
+  background-image: url(../img/chips.png);
+  background-position: -250px -1px;
+  opacity: 1;
+}
+.chip_put {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    width: 6%;
+    height:10%;
+}
+.chip_put > div{
+   width: 80%; 
+   height: 88%;
+   position: relative;
+   z-index: 1;
+}
+.chip_put >div:first-child{
+  background-image: url(../img/chips.png);
+  background-position: -1px -1px;
+}
+.chip_put >div:nth-child(2){
+  position: absolute;
+  top:0;
+  left:15%;
+  background-image: url(../img/chips.png);
+  background-position: -50px -1px;
+  z-index: 2;
+}
+.chip_put >div:nth-child(3){
+  position: absolute;
+  top:0;
+  left:30%;
+  background-image: url(../img/chips.png);
+  background-position: -100px -1px;
+  z-index: 3;
+}
+#zero {
+    padding: 0;
+    margin-left:5%;
+    height:50%;
+    width: 6.43%;
+    border: 2px solid white ;
+    writing-mode:tb-rl;
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+    color:white;
+    box-sizing: border-box;
+    float:left;
+    border-bottom-right-radius: 1em;
+    border-top-right-radius: 1em;
+ }
+.red_num, .black_num, .two_to_one {
+    height: 16.67%;
+    width: 6.43%;
+    border: 2px solid white ;
+    writing-mode:tb-rl;
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+    color:white;
+    box-sizing: border-box;
+    float: left;
+}
+.red_num {
+     background-color: red;
+}
+.black_num{
+     background-color: black;
+    }
+.dozen, .first_dozen {
+    width: 25.72%;
+    border: 2px solid white ;
+    height: 15%;
+    color:white;
+    box-sizing: border-box;
+    float: left;
+
+}
+.first_dozen {
+    margin-left:11.43%;
+}
+.bottom_line {
+    margin-left:11.43%;
+    margin-right: 5%; 
+    width: 77.16%;
+    height: 15%;
+    color:white;
+    box-sizing: border-box;
+    float: left;
+}
+.bottom_line .one_eighteen, .bottom_line .even, .bottom_line .red, .bottom_line .black, .bottom_line .odd, .bottom_line .nineteen_thirty_six  {
+    border: 2px solid white;
+    width: 16.66%;
+    height: 100%;
+    float: left;
+    box-sizing: border-box;
+}
+.bottom_line .red .red_r, .bottom_line .black .black_r  {
+   margin:7% 0 0 34%;
+   width: 32%;
+   height: 70%;
+   box-sizing: border-box;
+   border: 2px solid white;
+   transform: rotate(-45deg);
+}
+.bottom_line .red .red_r {
+  background-color: red;
+}
+.bottom_line .black .black_r{
+   background-color: black;
+   }
+#bottom_block{
+    width: 100%;
+    height:20%;
+    margin: 5%;
+    }
+#bottom_block .credit, .bet, .balance {
+    float: left;
+    margin-top: 0.3%;
+    padding: 1%;
+    box-sizing: border-box;
+    width: 30%;
+    height: 80%;
+    border: 1px solid white;
+    color: white;
+    font-size: 60%;
+    text-align: left;
+}
+
+
