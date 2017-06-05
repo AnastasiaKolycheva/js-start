@@ -82,7 +82,7 @@ body{
     color:white;
     font-size: 50%;
     text-align: center;
-   }
+}
 #top_block .chips{
     margin-top: 0;
     margin-top: 1%;
@@ -90,6 +90,20 @@ body{
     margin-bottom: 0; 
     height: 35.67%;
     }
+#top_block .button {
+  float: left;
+  margin-left:22%;
+  margin-top: -5%;
+  width: 10%;
+  height: 20%;
+  color: white;
+  background-color: #2E8B57;
+  cursor: pointer;
+  outline: none;
+  border:0;
+  border-radius: 8px;
+  box-shadow: 5px 2px 5px rgba(0,0,0,.3);
+}
 #top_block .chips >div{
    float: left;
    width: 5.2%; 
