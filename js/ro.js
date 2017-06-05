@@ -19,14 +19,15 @@ function Roll (min,max) {
 	}
 	return "зеро";
  };
+
 function countNum () {
-	for(i = 0; i < 10; i++) {
-   	var num = Roll(0,36);
-    aResult[i] = num;
-    console.log (aResult[i]);
-    console.log (aResult.length);
-   }
- }
+   var num = Roll(0,36);
+   aResult.push(num);
+   console.log (aResult[0] + " " + aResult[1] + " " + aResult[2]);
+   console.log (aResult.length);
+  }
+  
+
  
 
 
