@@ -22,7 +22,7 @@ function Roll (min,max) {
 
 function countNum () {
    var num = Roll(0,36);
-   aResult.push(num);
+   aResult.unshift(num);
    console.log (aResult[0] + " " + aResult[1] + " " + aResult[2]);
    console.log (aResult.length);
   }
