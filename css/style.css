@@ -66,7 +66,6 @@ body{
     color:white;
     box-sizing: border-box;
     float: left;
-    opacity: 0.3;
 }
 #top_block .switch{
     margin-left: 3%;
@@ -134,8 +133,7 @@ body{
 #top_block .chips >div:nth-child(6){
   background-image: url(../img/chips.png);
   background-position: -250px -1px;
-  opacity: 1;
-}
+  }
 .chip_put {
     position: absolute;
     top: 45%;

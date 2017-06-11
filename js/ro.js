@@ -19,14 +19,68 @@ function Roll (min,max) {
 	}
 	return "зеро";
  };
-
 function countNum () {
    var num = Roll(0,36);
    aResult.unshift(num);
    console.log (aResult[0] + " " + aResult[1] + " " + aResult[2]);
    console.log (aResult.length);
+   for (var i = 0; i<aResult.length; i++){
+		if (i == 10) 
+		aResult.pop(num);
+	}
+  var strLine = aResult.join(" "),
+      strLine = strLine.replace (/зеро/g, 0),
+      strLine2 = /\D+/g,
+      strLine = strLine.replace(strLine2, ',');
+  console.log (strLine);
+  var aLine = strLine.split(',');
+     undef (aLine[0],1);
+     undef (aLine[1],2);
+     undef (aLine[2],3);
+     undef (aLine[3],4);
+     undef (aLine[4],5);
+     undef (aLine[5],6);
+     undef (aLine[6],7);
+     undef (aLine[7],8);
+     undef (aLine[8],9);
+     undef (aLine[9],10);
+   };
+ 
+ function undef (a,b) {
+ 	if (a != undefined) {
+  	  var doc=document.getElementById(b);
+      doc.innerHTML=a;
+    }
+   for (var i = 0; i<aBlack.length; i++){
+		if (a == aBlack[i]) {
+		 doc.style.color = "white";
+		 doc.style.background = "black";
+		}
+	  if (a == 0) {
+	  	doc.style.color = "yellow";
+	  	doc.style.background = "darkgreen";
+	  }
+	}
+	for (var i = 0; i<aRed.length; i++){
+		if (a == aRed[i]){
+		doc.style.color = "black";
+		doc.style.background = "red";
+	}
   }
+}
+function act (id) {
+	var chip = document.getElementById(id);
+	if (chip.style.opacity == 1) chip.style.opacity = 0.5;
+	else chip.style.opacity = 1;
+  }
+
+
+
+
+
+
   
+
 
  
 
