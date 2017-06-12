@@ -1,3 +1,4 @@
+var ACTIVE_CHIP_CLASS = "active_chip";
 var sPlayerFio = prompt ("Введите Ваши данные: Фамилия Имя Отчество");
 console.log (sPlayerFio);
 var iCredit = 4500;
@@ -7,6 +8,8 @@ var iBalance = 0;
 var aBlack = [2,4,6,8,10,11,13,15,17,22,24,26,28,29,31,33,35],
     aRed = [1,3,5,7,9,12,14,16,18,19,21,23,25,27,30,32,34,36],
     aResult = [];
+var divChips = document.querySelector(".chips");
+console.dir(divChips);
 function Roll (min,max) {
 	var rand = min + Math.floor(Math.random() * (max + 1 - min));
 	for (var i = 0; i<aBlack.length; i++){
@@ -67,12 +70,29 @@ function countNum () {
 		doc.style.background = "red";
 	}
   }
+};
+
+ /*var arChips = divChips.children,
+    iChips = arChips.length;
+ if (iChips > 0){
+ 	for (var i = 0; i< iChips; i++){
+ 		arChips[i].addEventListener("click",makeActive);
+ 	}
+ }*/
+
+/*function makeActive(event){
+	var ifActive = checkActive(event.target);
+	if(!ifActive){
+		var className = event.target.className;
+		event.target.className = ACTIVE_CHIP_CLASS;
+	}
 }
-function act (id) {
-	var chip = document.getElementById(id);
-	if (chip.style.opacity == 1) chip.style.opacity = 0.5;
-	else chip.style.opacity = 1;
-  }
+function checkActive(node){
+	if(!node) return false;
+	var arClass = node.className.split(" ");
+	return (arClass.indexOf(ACTIVE_CHIP_CLASS) !== -1);
+}*/
+
 
 
 

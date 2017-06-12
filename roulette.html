@@ -4,8 +4,8 @@
 	  <meta charset="utf-8" />
      <link type="text/css" rel="stylesheet" href="css/style.css" />
      <link href="https://fonts.googleapis.com/css?family=Khula:400,600,700,800" rel="stylesheet">
-     <script type="text/javascript" src="js/ro.js"></script> 
-   </head>
+     <script type="text/javascript" src="js/ro.js"></script>
+    </head>
     <body>
          <section id="roulette">
          <div class="chip_put">
@@ -47,17 +47,17 @@
             <span>Выпавшие числа</span>
           </div>
           <div class="chips">
-            <div id="ch" onclick="act ('ch')">
+            <div id="ch" data-rating="5" class="active_chip">
             </div>
-            <div id="ch1" onclick="act ('ch1')">
+            <div id="ch1" data-rating="10" class="chip">
             </div>
-             <div id="ch2" onclick="act ('ch2')">
+             <div id="ch2" data-rating="25" class="chip">
             </div>
-             <div id="ch3" onclick="act ('ch3')">
+             <div id="ch3" data-rating="50" class="chip">
             </div>
-             <div id="ch4" onclick="act ('ch4')">
+             <div id="ch4" data-rating="100" class="chip">
             </div>
-             <div id="ch5" onclick="act ('ch5')">
+             <div id="ch5" data-rating="500" class="chip">
             </div>
           </div>
           <button class ="button" onclick="countNum ()"> Крутить </button>

@@ -82,13 +82,13 @@ body{
     font-size: 50%;
     text-align: center;
 }
-#top_block .chips{
+.chips{
     margin-top: 0;
     margin-top: 1%;
     margin-right: 1%;
     margin-bottom: 0; 
     height: 35.67%;
-    }
+ }
 #top_block .button {
   float: left;
   margin-left:22%;
@@ -103,11 +103,16 @@ body{
   border-radius: 8px;
   box-shadow: 5px 2px 5px rgba(0,0,0,.3);
 }
-#top_block .chips >div{
+#top_block .chips .active_chip{
+    opacity: 1;
+}
+#top_block .chips .chip{
+    opacity: 0.5;
+}
+#top_block .chips #ch, #ch1, #ch2, #ch3, #ch4, #ch5{
    float: left;
    width: 5.2%; 
    height: 99%;
-   opacity: 0.5;
 }
 #top_block .chips >div:first-child{
   margin-left:40%;
